@@ -10,6 +10,7 @@ export type Database = {
           id: number
           name: string
           slug: string
+          description: string
           status: Database['public']['Enums']['current_status']
         }
         Insert: {
@@ -18,6 +19,7 @@ export type Database = {
           id?: never
           name: string
           slug: string
+          description: string
           status?: Database['public']['Enums']['current_status']
         }
         Update: {
@@ -26,6 +28,7 @@ export type Database = {
           id?: never
           name?: string
           slug?: string
+          description: string
           status?: Database['public']['Enums']['current_status']
         }
         Relationships: []
